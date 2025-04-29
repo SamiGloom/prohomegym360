@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHomeGym360 – Premium Home Gym Equipment</title>
+    <meta name="description" content="Shop top-rated treadmills, bikes, rowers, dumbbells, smart gym systems & accessories.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+        :root {
+            --mauve: #9e00d7;
+            --mauve-dark: #5a027a;
+            --mauve-pale: #A569BD33;
+        }
+        .font-impact { font-family: 'Impact', sans-serif; }
+        .search-input { 
+            background: rgba(165,105,189,0.1);
+            transition: all 0.3s ease;
+        }
+        .search-input:focus {
+            background: rgba(165,105,189,0.2);
+        }
+        .header-gradient {
+            background: linear-gradient(
+                90deg,
+                #000000 0%,
+                var(--mauve-dark) 100%
+            );
+        }
+    </style>
+</head>
+
+<body class="bg-black text-purple-400">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 header-gradient border-b border-[var(--mauve-dark)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <a href="/" class="flex-shrink-0">
+                    <img src="/Pictures/LogoPGH360.png" alt="ProHomeGym360" class="h-16 w-auto">
+                </a>
+
+                <!-- Barre de recherche -->
+                <div class="flex-1 max-w-2xl mx-8">
+                    <div class="relative">
+                        <input 
+                            type="search" 
+                            placeholder="Search products..." 
+                            class="w-full search-input text-white rounded-lg py-2 px-4 pl-10 focus:outline-none border border-[var(--mauve-dark)]"
+                        >
+                        <i class="fas fa-search absolute left-3 top-3 text-[var(--mauve-dark)]"></i>
+                    </div>
+                </div>
+
+                <!-- Section droite -->
+                <div class="flex items-center space-x-4 text-white">
+                    <!-- Sélecteur de langue -->
+                    <div class="relative group">
+                        <button class="hover:text-[var(--mauve-dark)] flex items-center">
+                            <i class="fas fa-globe mr-2"></i>
+                            EN/AR
+                        </button>
+                        <div class="hidden group-hover:block absolute right-0 mt-2 w-32 bg-[var(--mauve)] rounded-lg shadow-lg">
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-[var(--mauve-dark)]">English</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-[var(--mauve-dark)]">العربية</a>
+                        </div>
+                    </div>
+
+                    <!-- Compte utilisateur -->
+                    <div class="border-l border-[var(--mauve-dark)] h-6"></div>
+                    <div class="flex items-center space-x-2">
+                        <a href="/login" class="hover:text-[var(--mauve-dark)]">Login</a>
+                        <span class="text-[var(--mauve-dark)]">|</span>
+                        <a href="/register" class="hover:text-[var(--mauve-dark)]">Register</a>
+                    </div>
+
+                    <!-- Wishlist -->
+                    <a href="/wishlist" class="p-2 relative hover:text-red-400">
+                        <i class="fas fa-heart"></i>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </a>
+
+                    <!-- Panier -->
+                    <a href="/cart" class="p-2 relative hover:text-[var(--mauve-dark)]">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-[var(--mauve-dark)] text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] overflow-hidden border-b-2 border-[var(--mauve-pale)]">
+            <video autoplay muted loop class="w-full h-full object-cover" src="/videos/hero.mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-impact mb-4 text-[var(--mauve)]">Build Your Ultimate Home Gym</h1>
+                <p class="text-lg mb-6 max-w-2xl mx-auto px-4">Discover premium fitness equipment with professional guidance</p>
+                <a href="#best-sellers" class="px-8 py-3 bg-[var(--mauve)] text-white rounded-lg hover:bg-[var(--mauve-dark)] transition-colors">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Best Sellers -->
+        <section id="best-sellers" class="py-8 border-b-2 border-[var(--mauve-pale)]">
+            <h2 class="text-2xl text-center mb-6 text-[var(--mauve)]">Best Sellers</h2>
+            <div class="flex flex-wrap justify-center gap-4 px-4 max-w-7xl mx-auto">
+                <div class="w-64 bg-black p-4 rounded-lg hover:bg-gray-900 transition-colors">
+                    <img src="/products/treadmill-x9.jpg" alt="Treadmill X9" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-lg text-[var(--mauve)]">Professional Treadmill X9</h3>
+                    <p class="text-[var(--mauve-dark)] mt-2">$1499</p>
+                </div>
+                <!-- Ajouter 4 autres produits similaires -->
+            </div>
+        </section>
+
+        <!-- Catégories -->
+        <section id="categories" class="py-12 border-b-2 border-[var(--mauve-pale)]">
+            <h2 class="text-3xl text-center mb-8 text-[var(--mauve)]">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+                <!-- Tapis de Course -->
+                <a href="/category/treadmills" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/treadmills.jpg" alt="Treadmills" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Treadmills</h3>
+                </a>
+
+                <!-- Vélos -->
+                <a href="/category/bikes" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/bikes.jpg" alt="Exercise Bikes" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Exercise Bikes</h3>
+                </a>
+
+                <!-- Rameurs -->
+                <a href="/category/rowers" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/rowers.jpg" alt="Rowing Machines" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Rowing Machines</h3>
+                </a>
+
+                <!-- Haltères -->
+                <a href="/category/dumbbells" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/dumbbells.jpg" alt="Dumbbells" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Dumbbells</h3>
+                </a>
+
+                <!-- Bancs de Musculation -->
+                <a href="/category/benches" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/benches.jpg" alt="Weight Benches" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Weight Benches</h3>
+                </a>
+
+                <!-- Racks -->
+                <a href="/category/racks" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/racks.jpg" alt="Power Racks" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Power Racks</h3>
+                </a>
+
+                <!-- Systèmes Connectés -->
+                <a href="/category/smart-systems" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/smart-systems.jpg" alt="Smart Systems" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Smart Systems</h3>
+                </a>
+
+                <!-- Accessoires -->
+                <a href="/category/accessories" class="block bg-black rounded-lg hover:bg-gray-900 transition-colors overflow-hidden">
+                    <img src="/categories/accessories.jpg" alt="Accessories" class="w-full h-48 object-cover">
+                    <h3 class="text-xl text-center p-4 text-[var(--mauve)]">Accessories</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section id="about" class="py-12 border-b-2 border-[var(--mauve-pale)]">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl mb-6 text-[var(--mauve)]">Our Story</h2>
+                <p class="text-lg text-[var(--mauve-dark)]">
+                    At ProHomeGym360, we're revolutionizing home fitness with cutting-edge equipment 
+                    and expert-curated solutions for your personal training space.
+                </p>
+            </div>
+        </section>
+
+        <!-- Partenaires -->
+        <section class="py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl text-center mb-8 text-[var(--mauve)]">Our Partners</h2>
+                <div class="flex flex-wrap justify-center gap-8 items-center">
+                    <img src="/partners/technogym.png" alt="Technogym" class="h-16">
+                    <img src="/partners/nordictrack.png" alt="NordicTrack" class="h-16">
+                    <img src="/partners/proform.png" alt="ProForm" class="h-16">
+                    <img src="/partners/lifefitness.png" alt="Life Fitness" class="h-16">
+                    <img src="/partners/nautilus.png" alt="Nautilus" class="h-16">
+                    <img src="/partners/sportsart.png" alt="SportsArt" class="h-16">
+                    <img src="/partners/precor.png" alt="Precor" class="h-16">
+                    <img src="/partners/cybex.png" alt="Cybex" class="h-16">
+                </div>
+            </div>
+        </section>
+
+        <!-- Marge supplémentaire -->
+        <div class="my-12"></div>
+
+        <!-- Footer -->
+        <footer class="bg-black text-[var(--mauve)] py-12">
+            <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="hover:text-[var(--mauve-dark)]">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-[var(--mauve-dark)]">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <p>📍 Riyadh, Saudi Arabia</p>
+                    <p class="mt-2">📞 +966 55 123 4567</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Follow Us</h4>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="hover:text-[var(--mauve-dark)]">Facebook</a>
+                        <a href="#" class="hover:text-[var(--mauve-dark)]">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
